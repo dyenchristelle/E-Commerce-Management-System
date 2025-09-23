@@ -1,0 +1,29 @@
+<!-- for admin -->
+ <!-- try lang din muna -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+ </head>
+ <body>
+    <form id="admin-login" class="admin-login" method="get">
+        <div id="login-container" class="login-container"> 
+            <h1>Shop Name Admin</h1>
+
+            <label for="username">Username: </label>
+            <input type="text" class="admin-username" name="name" autocomplete="name" placeholder="name" required title="Enter username">
+
+            <label for="password">Password: </label>
+            <input type="password" name="name" id="admin-pass" required title="Enter password">
+
+            <div id="errorMessage" class="errorMessage"></div>
+
+            <button id="admin-login" type="submit">Login</button>
+        </div>
+
+    </form>
+    <script src="admin-script.js"></script>
+ </body>
+ </html>
