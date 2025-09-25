@@ -1,5 +1,6 @@
 <!-- for admin -->
  <!-- try lang din muna -->
+  {% load static %}
  <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -20,10 +21,9 @@
 
             <div id="errorMessage" class="errorMessage"></div>
 
-            <button id="admin-login" type="submit">Login</button>
+            <button id="login_button" type="submit">Login</button>
         </div>
 
     </form>
-    <script src="admin-script.js"></script>
- </body>
+    <script src="{% static 'main/js/admin/admin-script.js' %}"></script>
  </html>
