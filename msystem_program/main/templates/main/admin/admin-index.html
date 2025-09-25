@@ -14,10 +14,10 @@
             <h1>Shop Name Admin</h1>
 
             <label for="username">Username: </label>
-            <input type="text" class="admin-username" name="name" autocomplete="name" placeholder="name" required title="Enter username">
+            <input type="text" id="admin_username" name="name" autocomplete="name" placeholder="name" required title="Enter username">
 
             <label for="password">Password: </label>
-            <input type="password" name="name" id="admin-pass" required title="Enter password">
+            <input type="password" name="name" id="admin_pass" required title="Enter password">
 
             <div id="errorMessage" class="errorMessage"></div>
 
@@ -25,5 +25,8 @@
         </div>
 
     </form>
+    <script>
+        const admin_home = "{% url 'admin-homepage' %}";
+    </script>
     <script src="{% static 'main/js/admin/admin-script.js' %}"></script>
  </html>

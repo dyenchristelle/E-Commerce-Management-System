@@ -6,3 +6,6 @@ def user_index(request):
 
 def admin_index(request):
     return render(request, "main/admin/admin-index.html")
+
+def admin_homepage(request):
+    return render(request, "main/admin/homepage.html")
