@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("Form not found!");
         return;
     }
-    console.log("Form loaded successfully!");
+    console.log("login loaded successfully!");
 
     if(login_button) {
         login_button.addEventListener("click", async function (event) {
@@ -29,5 +29,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         });
+    }
+});
+
+
+// admin login successful > products
+document.addEventListener("DOMContentLoaded", function() {
+    const products = document.getElementById("products");
+
+    if (products) {
+        products.addEventListener("click", async function (event) {
+            event.preventDefault();
+
+            window.location.href = products_page;
+        })
     }
 });

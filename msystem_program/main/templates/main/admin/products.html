@@ -1,0 +1,25 @@
+  {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="add" method="get">
+        <label for="add">Item Name: </label>
+        <input type="text" id="add_item" name="Product_Name" required title="Enter Product Name">
+
+        <label for="quantity">Item Quantity: </label>
+        <input type="text" id="quantity" name="Quantity" required title="Enter Product Quantity">
+
+        <label for="price">Item Price: </label>
+        <input type="text" id="add_price" name="Price" required title="Enter Product Price">
+
+        <button id="add_item" type="submit">ADD ITEM</button>
+    </form>
+
+    <script src="{% static 'main/js/admin/admin-script.js' %}"></script>
+</body>
+</html>
